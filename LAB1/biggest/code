@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "Enter the first no "
+read f
+echo "Enter the second no"
+read s
+echo "Enter the third no "
+read t
+if [ $f -gt $s -a $f -gt $t ]
+then 
+	echo "The first no is the biggest "
+elif [ $s -gt $f -a $s -gt $t ] 
+then 
+	echo "The second no is the biggest "
+else
+	echo "The third no is biggest"
+fi
