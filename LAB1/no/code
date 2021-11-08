@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "Enter the number "
+read num
+if [ $num -eq 0 ] 
+then 
+	echo "The number is zero "
+elif [ $num -lt 0 ] 
+then 
+	echo "The number is negative "
+else 
+	echo "The number is positive"
+fi
