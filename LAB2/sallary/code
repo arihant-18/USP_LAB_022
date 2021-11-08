@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Enter the basic Sallary"
+read basic
+da=`expr $basic\*10/100|bc`
+hra=`expr $basic\*20/100|bc`
+gross_sal=`expr $basic+$da+$hra|bc`
+echo "The gross salaery is "$gross_sal
