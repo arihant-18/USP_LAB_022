@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Enter the no "
+read no
+st=1
+fact=1
+for (( c=$st; c<=$no; c++))
+do
+	fact=`expr $c\*$fact|bc`
+done 
+echo "factorial is "$fact
