@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "Enter the filename "
+read fname 
+l=`wc -l < $fname`
+w=`wc -w < $fname`
+c=`wc -m < $fname`
+echo -e "no of lines $l\nno of words $w\nno of characters $c\n"
