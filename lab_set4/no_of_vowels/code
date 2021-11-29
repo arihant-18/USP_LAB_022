@@ -1,0 +1,14 @@
+#!/bin/sh
+echo "Enter the string "
+read str
+count=0
+len=`expr length $str`
+while [ $len -gt 0 ]
+do
+	ch=`expr $str | cut -c $len`
+	case $ch in
+	[aeiouAEIOU]) count=$((count+1)) ;;
+	esac
+	len=$((len-1))
+done
+echo "the vowels in string are $count "
