@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "Enter the no"
+read no
+m=0
+n=1
+while [ $no -gt 0 ]
+do
+	echo -e "$m \c"
+	temp=$m
+	m=$((m+$n))
+	n=$temp
+	no=$((no-1))
+done
